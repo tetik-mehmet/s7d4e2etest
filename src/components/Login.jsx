@@ -47,7 +47,9 @@ const Login = () => {
               onChange={handleEmailChange}
             />
             {!isValidEmail && email && (
-              <Alert color="danger">Geçerli bir email giriniz.</Alert>
+              <Alert className="error" color="danger">
+                Geçerli bir email giriniz.
+              </Alert>
             )}
           </FormGroup>
 
@@ -70,6 +72,7 @@ const Login = () => {
           <FormGroup>
             <Label>
               <Input
+                data-cy="terms"
                 type="checkbox"
                 checked={acceptedTerms}
                 onChange={(e) => setAcceptedTerms(e.target.checked)}
@@ -82,6 +85,7 @@ const Login = () => {
           </FormGroup>
 
           <Button
+            data-cy="submit-button"
             color="primary"
             type="submit"
             disabled={!isValidEmail || !isValidPassword || !acceptedTerms}
