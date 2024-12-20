@@ -48,7 +48,7 @@ const Login = () => {
             />
             {!isValidEmail && email && (
               <Alert className="error" color="danger">
-                Geçerli bir email giriniz.
+                Geçerli bir email girin
               </Alert>
             )}
           </FormGroup>
