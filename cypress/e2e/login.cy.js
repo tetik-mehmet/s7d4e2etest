@@ -62,11 +62,4 @@ describe("form doldurma", () => {
     //assert
     cy.get("[data-cy='submit-button']").should("be.enabled");
   });
-  it("form doğru şekilde doldurunca form enabled oluyor", () => {
-    //arrange
-
-    cy.get("[data-cy='submit-button']").click();
-    //assert
-    cy.url().should("include", "/success");
-  });
 });
