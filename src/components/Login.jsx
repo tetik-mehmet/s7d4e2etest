@@ -64,7 +64,7 @@ const Login = () => {
             {!isValidPassword && password && (
               <Alert color="danger">
                 Şifre en az 8 karakter, bir büyük harf, bir küçük harf, bir sayı
-                ve bir özel karakter içermelidir.
+                ve bir özel karakter içermeli.
               </Alert>
             )}
           </FormGroup>
